@@ -165,10 +165,10 @@ Berikut adalah contoh output klasifikasi dari aplikasi web menggunakan model CNN
 
 ![Contoh Klasifikasi Rose](images/rose_example.jpeg)
 
-## Link Live Demo (Optional)
+## Link Live Demo
 - [Streamlit Sharing](https://share.streamlit.io/) atau [Hugging Face Spaces](https://huggingface.co/spaces) (deploy manual belum dilakukan; hubungi developer untuk akses).
 
 ## Resources
 - **Dataset**: [Google Drive - Flower Dataset](https://drive.google.com/drive/folders/1UoGVLAggyBttx7FxT_EUWbU6e0-v3z_Z?usp=sharing)
-- **Model**: [Google Drive - Trained Models](https://drive.google.com/drive/folders/1F5HkKb1TZvRStKjq1hQeaWvo8UeyPN6n?usp=sharing) (Mengandung 3 model: cnn_base.keras, pretrained_mobilenetv2_no_finetune.keras, pretrained_resnet50_no_finetune.keras)
+- **Model**: [Google Drive - Trained Models](https://drive.google.com/drive/folders/1F5HkKb1TZvRStKjq1hQeaWvo8UeyPN6n?usp=sharing)
 - **Google Colab Hasil Training**: [Colab Notebook](https://colab.research.google.com/drive/1owtefEu6OUjDkxaw6ww677f5RXtW1Aby?usp=sharing)
