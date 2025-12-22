@@ -157,13 +157,13 @@ Jika error, pastikan model `.keras` ada di folder `streamlit-app/MODEL.zip` atau
 
 ## Contoh Hasil Klasifikasi
 
-Berikut adalah contoh output klasifikasi dari aplikasi web menggunakan model ResNet50:
+Berikut adalah contoh output klasifikasi dari aplikasi web menggunakan model CNN Base, MobileNetV2, dan ResNet50:
 
-![Contoh Klasifikasi Tulip](images/tulip_example.jpg)
+![Contoh Klasifikasi Tulip](images/tulip_example.jpeg)
 
-![Contoh Klasifikasi Sunflower](images/sunflower_example.jpg)
+![Contoh Klasifikasi Sunflower](images/sunflower_example.jpeg)
 
-![Contoh Klasifikasi Rose](images/rose_example.jpg)
+![Contoh Klasifikasi Rose](images/rose_example.jpeg)
 
 ## Link Live Demo (Optional)
 - [Streamlit Sharing](https://share.streamlit.io/) atau [Hugging Face Spaces](https://huggingface.co/spaces) (deploy manual belum dilakukan; hubungi developer untuk akses).
