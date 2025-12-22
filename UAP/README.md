@@ -150,10 +150,25 @@ Aplikasi web menggunakan Streamlit untuk interface sederhana: unggah gambar bung
 
 5. **Penggunaan**:
    - Upload gambar bunga (format PNG/JPG/JPEG) dari kelas tulip, sunflower, rose, dandelion, atau daisy.
-   - App akan memproses dan menampilkan prediksi kelas beserta confidence score menggunakan model ResNet50.
+   - App akan memproses dan menampilkan prediksi kelas beserta confidence score menggunakan model CNN Base, MobileNetV2, atau ResNet50.
    - Contoh: Upload foto tulip → Prediksi: "tulip" dengan 99% confidence.
 
-Jika error, pastikan model `.keras` ada di folder `streamlit-app/models/` atau sesuaikan path di `app.py`.
+Jika error, pastikan model `.keras` ada di folder `streamlit-app/MODEL.zip` atau sesuaikan path di `app.py`.
+
+## Contoh Hasil Klasifikasi
+
+Berikut adalah contoh output klasifikasi dari aplikasi web menggunakan model ResNet50:
+
+![Contoh Klasifikasi Tulip](images/tulip_example.jpg)
+
+![Contoh Klasifikasi Sunflower](images/sunflower_example.jpg)
+
+![Contoh Klasifikasi Rose](images/rose_example.jpg)
 
 ## Link Live Demo (Optional)
 - [Streamlit Sharing](https://share.streamlit.io/) atau [Hugging Face Spaces](https://huggingface.co/spaces) (deploy manual belum dilakukan; hubungi developer untuk akses).
+
+## Resources
+- **Dataset**: [Google Drive - Flower Dataset](https://drive.google.com/drive/folders/1UoGVLAggyBttx7FxT_EUWbU6e0-v3z_Z?usp=sharing)
+- **Model**: [Google Drive - Trained Models](https://drive.google.com/drive/folders/1F5HkKb1TZvRStKjq1hQeaWvo8UeyPN6n?usp=sharing) (Mengandung 3 model: cnn_base.keras, pretrained_mobilenetv2_no_finetune.keras, pretrained_resnet50_no_finetune.keras)
+- **Google Colab Hasil Training**: [Colab Notebook](https://colab.research.google.com/drive/1owtefEu6OUjDkxaw6ww677f5RXtW1Aby?usp=sharing)
