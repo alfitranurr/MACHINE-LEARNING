@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# Cache & tooling
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.pdm-python
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Model / file besar
+MODEL.zip
