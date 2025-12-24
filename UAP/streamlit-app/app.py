@@ -194,14 +194,24 @@ st.markdown("""
 
 @st.cache_resource
 def load_models():
-    # Search for MODEL.zip in common locations
+    # Search for MODEL.zip in common locations - UPDATED dengan path yang benar berdasarkan struktur folder Anda
     possible_paths = [
         "MODEL.zip",
         os.path.join("src", "MODEL.zip"),
         os.path.join("UAP", "src", "MODEL.zip"),
         os.path.join(os.getcwd(), "src", "MODEL.zip"),
-        os.path.join(os.getcwd(), "MODEL.zip")
+        os.path.join(os.getcwd(), "MODEL.zip"),
+        # TAMBAHAN: Path yang sesuai dengan struktur Anda (dari root repo ke UAP/streamlit-app/MODEL.zip)
+        os.path.join("UAP", "streamlit-app", "MODEL.zip"),
+        # Backup eksplisit dengan CWD
+        os.path.join(os.getcwd(), "UAP", "streamlit-app", "MODEL.zip")
     ]
+    
+    # Debug: Print semua path yang dicoba (akan muncul di log Streamlit Cloud)
+    print("Possible paths being checked:")
+    for path in possible_paths:
+        print(f"  - {path} (exists: {os.path.exists(path)})")
+    
     zip_path = next((p for p in possible_paths if os.path.exists(p)), None)
     
     if zip_path is None:
