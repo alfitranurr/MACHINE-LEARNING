@@ -181,7 +181,7 @@ Berikut adalah contoh output klasifikasi dari aplikasi web menggunakan model CNN
 
 ## Link Live Demo
 
-- [flowerimageclassification.streamlit.app](https://flowerimageclassification.streamlit.app/).
+- [flowerimageclassification.streamlit.app](https://flowerimageclassification.streamlit.app/)
 
 ## Resources
 
