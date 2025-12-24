@@ -181,7 +181,7 @@ Berikut adalah contoh output klasifikasi dari aplikasi web menggunakan model CNN
 
 ## Link Live Demo
 
-- [Streamlit Sharing](https://share.streamlit.io/) atau [Hugging Face Spaces](https://huggingface.co/spaces) (deploy manual belum dilakukan; hubungi developer untuk akses).
+- [flowerimageclassification.streamlit.app](https://flowerimageclassification.streamlit.app/).
 
 ## Resources
 
