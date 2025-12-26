@@ -194,7 +194,7 @@ st.markdown("""
 
 @st.cache_resource
 def load_models():
-    # Search for MODEL.zip in common locations - UPDATED dengan path yang benar berdasarkan struktur folder Anda
+    # Search for MODEL.zip in common locations
     possible_paths = [
         "MODEL.zip",
         os.path.join("src", "MODEL.zip"),
@@ -296,7 +296,7 @@ def load_models():
 
         def build_mobilenetv2():
             base_model = MobileNetV2(weights='imagenet', include_top=False, input_shape=(*IMG_SIZE, 3))
-            base_model.trainable = False  # No finetune
+            base_model.trainable = False  
             model = Sequential([
                 base_model,
                 GlobalAveragePooling2D(),
@@ -313,7 +313,7 @@ def load_models():
 
         def build_resnet50():
             base_model = ResNet50(weights='imagenet', include_top=False, input_shape=(*IMG_SIZE, 3))
-            base_model.trainable = False  # No finetune
+            base_model.trainable = False  
             model = Sequential([
                 base_model,
                 GlobalAveragePooling2D(),
@@ -399,7 +399,7 @@ def predict_with_model(uploaded_file, model, classes, tab_name, preprocess_func)
                     st.markdown(f'''
                     <div class="predict-box">
                         <h3>🎯 Hasil Prediksi: <strong>{predicted_class}</strong></h3>
-                        <p><em>Keyakinan Model:</em> <strong>{confidence:.2%}</strong></p>
+                        <p><em>Confidence:</em> <strong>{confidence:.2%}</strong></p>
                         <small>Diklasifikasikan oleh {tab_name}</small>
                     </div>
                     ''', unsafe_allow_html=True)
